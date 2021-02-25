@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Calculator</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#DivideCalculator">Divide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#MultiplyCalculator">Multiply</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="introduction">
+    Here is a calculator for you! You can use it to do division.
+</section>
+
+<section id="DivideCalculator">
+    <h2>Divide</h2>
+    <div>
+        <label for="first-number">first number</label>
+        <input type="number" id="first-number"/>
+    </div>
+    <div>
+        <label for="second-number">second number</label>
+        <input type="number" id="second-number"/>
+    </div>
+    <button id="divide-button">Calculate</button>
+    <p>Result: <span id="divide-output"></span></p>
+</section>
+
+<section class="introduction">
+    Here is a calculator for you! You can use it to do multiplication.
+</section>
+
+<section id="MultiplyCalculator">
+    <h2>Multiply</h2>
+    <div>
+        <label for="first-number1">first number</label>
+        <input type="number" id="first-number1"/>
+    </div>
+    <div>
+        <label for="second-number1">second number</label>
+        <input type="number" id="second-number1"/>
+    </div>
+    <button id="multiply-button">Calculate</button>
+    <p>Result: <span id="multiply-output"></span></p>
+</section>
+
+<script src="calculate.js"></script>
+</body>
+</html>
